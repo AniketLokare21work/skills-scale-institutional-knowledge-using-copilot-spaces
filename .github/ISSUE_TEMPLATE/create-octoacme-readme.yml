@@ -1,0 +1,9 @@
+name: "Create OctoAcme README"
+description: "Create a README for OctoAcme Project Management Docs with links to all process documents and a summary of project management processes."
+title: "[Process Doc Update]: Create README for OctoAcme Project Management Docs"
+labels: ["documentation", "process improvement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This issue is for creating a comprehensive README that serves as an entry point to the OctoAcme Project Management Docs collection.
