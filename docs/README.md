@@ -34,6 +34,24 @@ OctoAcme projects follow a five-stage lifecycle:
 - **QA/Testing** — Validates quality and acceptance criteria
 - **Stakeholders** — Provide inputs, approvals, and strategic direction
 
+## OctoAcme Project Management Processes Summary
+
+### Project Lifecycle & Key Workflows
+
+OctoAcme employs a structured five-stage project lifecycle designed to deliver customer value iteratively while maintaining clear ownership and transparency. Projects progress through **Initiation** (validating business need and aligning stakeholders via a lightweight one-pager), **Planning** (breaking work into shippable increments with acceptance criteria), **Execution** (day-to-day delivery with regular standups and demos), **Release** (standardized deployment to production), and **Close & Retrospective** (capturing learnings for continuous improvement). Throughout execution, teams use GitHub Projects for workflow management with columns spanning Backlog, Ready, In Progress, In Review, QA, and Done. The approach emphasizes iterative delivery through small, testable increments rather than large monolithic releases, supported by a prioritized backlog and clear Definition of Done criteria for each sprint or iteration.
+
+### Roles & Communication Structure
+
+OctoAcme defines clear ownership across three primary personas: **Project Managers** coordinate delivery, manage schedules, risks, and stakeholder communications; **Product Managers** define what should be built, prioritize the backlog, and measure outcomes through success metrics; and **Developers** implement features, write tests, and collaborate on design and code reviews, supported by QA/Testing resources for quality validation. Communication follows a consistent cadence with weekly PM-PdM alignment syncs, twice-weekly team standups (15-minute daily standups focused on progress and blockers), monthly stakeholder updates, and ad-hoc escalations as needed. This structured communication rhythm ensures alignment across cross-functional teams while maintaining transparency about progress, risks, and dependencies.
+
+### Quality Assurance & Risk Management
+
+Quality is embedded throughout OctoAcme's execution model through multiple checkpoints: unit tests for new logic, integration tests where applicable, end-to-end smoke tests for critical flows before release, and security scanning in CI pipelines. Pull requests follow strict conventions (small PRs ≤400 lines when possible, linked to issues with clear acceptance criteria, and requiring at least one approval before merging). Risk management is proactive, with teams identifying, assessing, and monitoring risks through a maintained Risk Register during planning and ongoing execution. A three-level blocker escalation path (team triage → PM escalation to Product Lead and dependent teams → sponsor-level escalation for business-impacting issues) ensures critical impediments are quickly surfaced and resolved, supported by incident communication templates and rollback playbooks for production issues.
+
+### Continuous Improvement Culture
+
+OctoAcme institutionalizes learning through retrospectives held after each sprint, release, or significant milestone, structured around what went well, what could improve, and actionable items with clear owners and due dates. These improvements feed back into the project backlog and are tracked in weekly PM syncs to ensure accountability. The organization's core principles—customer-first prioritization, data-informed decisions, psychological safety for feedback, and iterative delivery—create a foundation for sustainable, repeatable project execution that reduces single-person dependency risk and accelerates team onboarding through documented, versioned artifacts maintained in the repository.
+
 ## Documentation Index
 
 ### Starting Points
