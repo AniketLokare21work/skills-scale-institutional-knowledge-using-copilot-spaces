@@ -1,51 +1,3 @@
-# [Process Doc Update]: Create README for OctoAcme Project Management Docs with project management processes summary and links to all documentation
-
-## Which process document do you want to update?
-**<new document>**
-
-## Summary of New Content
-
-Create a comprehensive README for the OctoAcme Project Management Docs that serves as the entry point to all project management process documentation. The README should include:
-
-1. **A brief overview of OctoAcme's project management approach and key principles** (Customer-first, Iterative delivery, Clear ownership, Data-informed decisions, Psychological safety)
-
-2. **A summary of the core project management processes and lifecycle stages:**
-   - Initiation — Validate business need, align stakeholders, create high-level plan
-   - Planning — Break work into shippable increments, identify risks/dependencies
-   - Execution — Build, test, review, iterate toward milestones
-   - Release — Deploy to production with confidence and minimal risk
-   - Close & Retrospective — Capture learnings and improve processes
-
-3. **A complete table of contents with links to all documentation in the docs/ folder:**
-   - octoacme-project-management-overview.md
-   - octoacme-project-initiation.md
-   - octoacme-project-planning.md
-   - octoacme-execution-and-tracking.md
-   - octoacme-risks-and-communication.md
-   - octoacme-release-and-deployment.md
-   - octoacme-retrospective-and-continuous-improvement.md
-   - octoacme-roles-and-personas.md
-
-4. **Guidance on how to use the documentation** for different scenarios (new to team, starting a project, looking for specific guidance, using with Copilot Spaces)
-
-5. **Information about key artifacts, communication cadence, and feedback paths**
-
-## Why is this update needed?
-
-Currently, the project management processes are scattered across multiple markdown files in the docs/ folder with no central entry point. A comprehensive README would:
-
-- **Provide single starting point:** New team members can understand OctoAcme's project management approach from one location
-- **Reduce onboarding time:** Clear navigation path to all process documentation
-- **Create centralized knowledge hub:** Aligns with the purpose of scaling institutional knowledge using Copilot Spaces
-- **Improve discoverability:** Existing process documentation becomes more accessible and usable
-- **Enable Copilot integration:** README can be easily attached to Copilot Spaces for context-aware guidance
-- **Establish standard reference:** Provides consistent entry point for cross-team reference and training
-
-## Suggested Content
-
-Create a **README.md** file in the **docs/** folder with the following structure:
-
-```markdown
 # OctoAcme Project Management Documentation
 
 ## Welcome to OctoAcme's Project Management Knowledge Base
@@ -133,10 +85,4 @@ If you have questions about these processes, encounter gaps, or identify opportu
 
 ---
 
-*Last updated: 2026-05-13*
-```
-
-## Acceptance Criteria
-- [x] Content aligns with existing process docs in the docs/ folder
-- [x] Update improves clarity and closes significant gap (lack of central navigation point for scattered documentation)
-- [x] Proposed content reflects and cross-references all existing documentation files
+*Last updated: 2026-05-14*
