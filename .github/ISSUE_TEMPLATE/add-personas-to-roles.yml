@@ -1,0 +1,257 @@
+name: "Adding More Personas and Roles to Project Management Processes"
+description: "Request to add additional personas and role definitions to enhance clarity and accountability in project management processes."
+title: "[Process Doc Update]: Adding more personas and roles to the project management processes"
+labels: ["documentation", "process improvement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Issue: Expand Personas and Roles in OctoAcme Project Management Docs
+        
+        Currently, the `octoacme-roles-and-personas.md` document defines three primary personas (Developers, Product Managers, Project Managers), but the project management framework references several other critical roles that lack formal persona definitions.
+        
+        This issue proposes adding the following personas to enhance clarity, accountability, and role-specific guidance:
+
+  - type: textarea
+    id: content_summary
+    attributes:
+      label: "Summary of New Content"
+      description: "Briefly describe the new roles and personas to be added."
+      value: |
+        Add detailed persona definitions for the following roles that are referenced throughout OctoAcme's project management processes but currently lack formal documentation:
+        
+        1. **QA/Testing Lead** — Validates quality and acceptance criteria
+        2. **Stakeholders/Sponsors** — Provide inputs, approvals, and strategic direction
+        3. **Technical Architect/Tech Lead** — Owns technical design decisions and system scalability
+        4. **Security/Compliance Officer** — Ensures security and regulatory compliance
+        5. **Communications/Operations Lead** — Manages incident communication and operational coordination
+        
+        Each persona will include:
+        - Role Summary
+        - Key Responsibilities
+        - Goals and Success Metrics
+        - Typical Communication Patterns
+        - Interaction with Other Roles
+    validations:
+      required: true
+
+  - type: textarea
+    id: rationale
+    attributes:
+      label: "Why is this update needed?"
+      description: "Explain the reason for adding these personas."
+      value: |
+        **Gap Identified:**
+        The current persona documentation covers only three roles, but the process documents reference many other critical contributors:
+        - "QA/Testing" is mentioned in Execution & Tracking and Release & Deployment but has no persona definition
+        - "Stakeholders" and "Sponsors" are critical to communication, escalation, and decision-making but lack formal definition
+        - Technical and architectural decision-making roles are implied but not explicitly defined
+        - Security and incident response responsibilities are mentioned but not owned by a clear persona
+        - Operational communication (incident response, status updates) lacks clear ownership
+        
+        **Why This Matters:**
+        - **Clarity**: New team members won't understand who is responsible for what
+        - **Accountability**: Decisions and actions won't have clear owners
+        - **Scalability**: As teams grow, role confusion leads to gaps and inefficiencies
+        - **Communication**: Persona-specific guidance in Copilot Spaces requires well-defined roles
+        
+        **Expected Benefits:**
+        - Reduced role ambiguity during project execution
+        - Better decision-making and escalation paths
+        - Improved onboarding for new team members
+        - More effective use of Copilot Spaces with role-specific prompts and guidance
+    validations:
+      required: true
+
+  - type: textarea
+    id: example_content
+    attributes:
+      label: "Suggested Content (optional)"
+      description: "Proposed new persona definitions to add to octoacme-roles-and-personas.md"
+      value: |
+        ---
+        
+        ## QA/Testing Lead
+        
+        ### Role Summary
+        QA/Testing Leads ensure product quality through comprehensive test planning, execution, and validation. They collaborate with developers and product managers to define acceptance criteria and validate that features meet quality standards before release.
+        
+        ### Responsibilities
+        - Design and maintain test strategies and test plans aligned with project milestones
+        - Execute manual and automated testing to validate acceptance criteria
+        - Identify, document, and track defects with clear reproduction steps
+        - Validate fixes and ensure regression testing is complete
+        - Participate in sprint planning to understand scope and acceptance criteria
+        - Conduct end-to-end smoke tests before release
+        - Provide quality metrics and testing status updates to the project team
+        
+        ### Goals
+        - Minimize defects reaching production
+        - Ensure features meet acceptance criteria before release
+        - Reduce cycle time through efficient test automation
+        - Maintain high confidence in product quality
+        
+        ### Typical Communication
+        - Sprint planning and backlog refinement sessions
+        - Daily standups to report test status and blockers
+        - Defect reports and quality metrics in project board
+        - Pre-release verification checklists
+        - Post-incident analysis and regression testing
+        
+        ### Interaction with Other Roles
+        - Works with Developers to understand technical implementation and define testable components
+        - Collaborates with Product Managers on acceptance criteria clarity
+        - Reports to Project Manager on quality risks and release readiness
+        - Partners with Tech Lead on test infrastructure and automation strategy
+        
+        ---
+        
+        ## Stakeholder/Sponsor
+        
+        ### Role Summary
+        Stakeholders and Sponsors are decision-makers, strategic advisors, and approvers who represent business interests, customer needs, or organizational priorities. They provide direction, approvals, and resources to enable project success.
+        
+        ### Responsibilities
+        - Provide strategic direction and business context for projects
+        - Make go/no-go decisions at key project gates
+        - Approve resource allocation and budget
+        - Review and approve project charters and major plan changes
+        - Receive regular status updates and escalations
+        - Advocate for the project within the broader organization
+        - Provide feedback on deliverables and outcomes
+        
+        ### Goals
+        - Ensure projects align with business strategy and customer needs
+        - Minimize business and organizational risk
+        - Maximize return on investment
+        - Remove organizational blockers to project success
+        
+        ### Typical Communication
+        - Project initiation and decision gate meetings
+        - Monthly or milestone-based status updates
+        - Escalation communications for critical risks or decisions
+        - Post-release review and retrospective participation
+        - Quarterly strategic alignment discussions
+        
+        ### Interaction with Other Roles
+        - Receives project charters and one-pagers from Project Managers
+        - Reviews success metrics and outcomes with Product Managers
+        - Provides executive visibility and escalation support
+        - Approves budget and resource trade-offs recommended by Project Manager
+        
+        ---
+        
+        ## Technical Architect / Tech Lead
+        
+        ### Role Summary
+        Technical Architects and Tech Leads own technical design decisions, system scalability, and engineering excellence. They collaborate with developers to ensure solutions are robust, maintainable, and aligned with long-term technical strategy.
+        
+        ### Responsibilities
+        - Design technical solutions and architecture for major features
+        - Review and approve technical approach for complex work
+        - Identify and mitigate technical risks and dependencies
+        - Establish coding standards, patterns, and best practices
+        - Mentor developers and conduct technical reviews
+        - Plan and manage technical debt
+        - Ensure scalability, performance, and observability in design
+        
+        ### Goals
+        - Deliver technically sound, maintainable solutions
+        - Reduce technical risk and debt
+        - Enable team velocity through good architectural decisions
+        - Build scalable, observable systems
+        
+        ### Typical Communication
+        - Technical design reviews and architecture discussions
+        - Sprint planning for technical complexity assessment
+        - Code reviews and pull request feedback
+        - Technical risk escalations
+        - Knowledge sharing and engineering guild participation
+        
+        ### Interaction with Other Roles
+        - Guides Developers on technical approach and best practices
+        - Works with Project Manager to identify technical dependencies and risks
+        - Collaborates with QA/Testing Lead on testability and automation strategy
+        - Advises Product Manager on technical trade-offs and feasibility
+        
+        ---
+        
+        ## Security / Compliance Officer
+        
+        ### Role Summary
+        Security and Compliance Officers ensure that projects meet security standards, regulatory requirements, and organizational policies. They review designs, validate implementations, and manage security incidents.
+        
+        ### Responsibilities
+        - Review project requirements for security and compliance implications
+        - Conduct security design reviews and threat modeling
+        - Validate security controls are implemented correctly
+        - Manage vulnerability scanning, penetration testing, and compliance audits
+        - Lead security incident response when needed
+        - Provide guidance on data handling, encryption, and access controls
+        - Track security and compliance metrics
+        
+        ### Goals
+        - Minimize security breaches and compliance violations
+        - Maintain customer trust and organizational reputation
+        - Enable compliant, secure feature delivery
+        - Reduce time to remediate security issues
+        
+        ### Typical Communication
+        - Security design reviews during planning phase
+        - Inclusion in threat modeling discussions
+        - Security scanning results and remediation tracking
+        - Incident response and communication
+        - Compliance audit and reporting
+        
+        ### Interaction with Other Roles
+        - Advises Project Manager and Technical Lead on security risks
+        - Works with Developers to validate security implementation
+        - Participates in QA/Testing planning for security test scenarios
+        - Escalates critical security issues to Sponsors
+        
+        ---
+        
+        ## Communications / Operations Lead
+        
+        ### Role Summary
+        Communications and Operations Leads coordinate incident response, manage operational communications, and ensure smooth execution of releases and deployments. They act as the nerve center for operational updates and incident coordination.
+        
+        ### Responsibilities
+        - Prepare and distribute regular status communications to stakeholders
+        - Coordinate incident response and blameless retrospectives
+        - Manage release and deployment communications
+        - Maintain status dashboards and operational metrics
+        - Coordinate cross-team communication during complex initiatives
+        - Document and disseminate post-incident learnings
+        - Support on-call schedules and escalation procedures
+        
+        ### Goals
+        - Maintain transparent communication with all stakeholders
+        - Minimize incident response time and impact
+        - Ensure smooth, well-coordinated releases
+        - Build organizational learning culture
+        
+        ### Typical Communication
+        - Weekly status updates and stakeholder reports
+        - Incident declaration and status updates
+        - Post-incident retrospective facilitation
+        - Release announcement and deployment coordination
+        - Operational dashboard updates and metrics sharing
+        
+        ### Interaction with Other Roles
+        - Receives project updates from Project Manager for stakeholder communication
+        - Coordinates with Tech Lead and QA Lead during incidents
+        - Works with Developers to gather technical details for incident communication
+        - Supports Project Manager with all-hands communications and updates
+
+  - type: checkboxes
+    id: acceptance_criteria
+    attributes:
+      label: "Acceptance Criteria"
+      description: "Check all that apply:"
+      options:
+        - label: "Five new personas (QA/Testing Lead, Stakeholder/Sponsor, Tech Architect/Tech Lead, Security/Compliance Officer, Communications/Operations Lead) are added to octoacme-roles-and-personas.md"
+        - label: "Each persona includes: Role Summary, Responsibilities, Goals, Typical Communication, and Interaction with Other Roles"
+        - label: "New personas align with roles and responsibilities mentioned in other process documents"
+        - label: "Personas are documented in a consistent format matching existing persona definitions"
+        - label: "Document is updated with updated date and reviewed for consistency with other process docs"
